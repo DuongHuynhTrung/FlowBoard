@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: FlowBoard Notification Service API
+  version: 1.0.0
+paths:
+  /notifications:
+    get:
+      summary: List personal notifications
+  /notifications/{id}/read:
+    put:
+      summary: Mark a standard notification as read
+  /notifications/read-all:
+    put:
+      summary: Mark all notifications as read
+  /projects/{id}/activities:
+    get:
+      summary: Get activity logs for a specific project

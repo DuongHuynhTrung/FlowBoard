@@ -1,0 +1,71 @@
+openapi: 3.0.0
+info:
+  title: FlowBoard Project Service API
+  version: 1.0.0
+paths:
+  /workspaces:
+    get:
+      summary: List workspaces
+    post:
+      summary: Create a workspace
+  /workspaces/{id}:
+    get:
+      summary: Get workspace details
+    put:
+      summary: Update a workspace
+    delete:
+      summary: Delete a workspace
+  /workspaces/{id}/invite-member:
+    post:
+      summary: Invite a user to a workspace
+  /projects:
+    get:
+      summary: List projects
+    post:
+      summary: Create project
+  /projects/{id}:
+    get:
+      summary: Get project details
+    put:
+      summary: Update project
+    delete:
+      summary: Delete project
+  /boards:
+    post:
+      summary: Create board
+  /boards/{id}:
+    get:
+      summary: Get board
+    put:
+      summary: Update board
+    delete:
+      summary: Delete board
+  /columns:
+    post:
+      summary: Create column
+  /columns/{id}:
+    put:
+      summary: Update column
+    delete:
+      summary: Delete column
+  /tasks:
+    post:
+      summary: Create task
+    get:
+      summary: Get tasks (filters applied)
+  /tasks/{id}:
+    get:
+      summary: Get task details
+    put:
+      summary: Update task
+    delete:
+      summary: Delete task
+  /tasks/{id}/move:
+    put:
+      summary: Move task across columns
+  /comments:
+    post:
+      summary: Add a comment to a task
+  /comments/{id}:
+    delete:
+      summary: Delete comment
